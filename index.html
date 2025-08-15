@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UKM Kabupaten Agam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                  
+                    <h1 class="text-2xl font-bold animate__animated animate__fadeIn">UKM Kabupaten Agam</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link animate__animated animate__fadeIn">Beranda</a>
+                    <a href="#produk" class="nav-link animate__animated animate__fadeIn animate__delay-1s">Produk UKM</a>
+                    <a href="#lokasi" class="nav-link animate__animated animate__fadeIn animate__delay-2s">Lokasi</a>
+                    <a href="#tutorial" class="nav-link animate__animated animate__fadeIn animate__delay-3s">Tutorial</a>
+                    <a href="#pemberitahuan" class="nav-link animate__animated animate__fadeIn animate__delay-4s">Pemberitahuan</a>
+                    <a href="daftar.html" class="nav-link animate__animated animate__fadeIn animate__delay-5s">Daftar UKM</a>
+                </nav>
+                
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b02c9487-1e37-4184-8153-5edf3fa7ee6e.png" alt="Pola geometris abstrak warna putih untuk latar belakang" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-4 z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 animate__animated animate__fadeInLeft">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Wujudkan Bisnis UKM <span class="text-yellow-300">Lebih Berkembang</span></h1>
+                    <p class="text-lg mb-8">Portal resmi Usaha Kecil Menengah Kabupaten Agam untuk pengembangan usaha lokal yang lebih maju dan berdaya saing.</p>
+                    <div class="flex space-x-4">
+                        <button class="btn-action px-6 py-2 rounded-lg font-medium shadow-lg">Jelajahi UKM</button>
+                        <button class="bg-white text-green-700 px-6 py-2 rounded-lg font-medium shadow-lg hover:bg-gray-100 transition">Daftar Sekarang</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate__animated animate__fadeInRight">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60ca1e7d-17a7-4f04-b5cf-fe4ecc43e582.png" alt="Sekelompok pengusaha lokal sedang memamerkan produk kerajinan tangan dan makanan khas dengan senyum bangga" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm animate-fadeInUp">
+                    <div class="text-4xl font-bold text-yellow-600 mb-2">250+</div>
+                    <div class="text-gray-600">UMKM Terdaftar</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm animate-fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="text-4xl font-bold text-green-600 mb-2">50+</div>
+                    <div class="text-gray-600">Jenis Produk</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm animate-fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="text-4xl font-bold text-green-600 mb-2">12</div>
+                    <div class="text-gray-600">Kecamatan</div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm animate-fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="text-4xl font-bold text-green-600 mb-2">5+</div>
+                    <div class="text-gray-600">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk UKM -->
+    <section id="produk" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 animate__animated animate__fadeIn">Produk Unggulan UKM</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto animate__animated animate__fadeIn">Temukan berbagai produk berkualitas dari pelaku UKM Kabupaten Agam</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produk 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeInUp">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/26dcff68-0148-4d35-94df-6da024efebd5.png" alt="Kerajinan anyaman rotan khas Agam dengan desain modern dan warna natural" class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Bestseller</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Anyaman Rotan</h3>
+                        <p class="text-gray-600 mb-4">Kerajinan tangan anyaman rotan dengan kualitas premium.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-yellow-600">Rp 150.000</span>
+                            <button class="btn-action px-4 py-2 rounded-md text-sm">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c61228c3-aeba-4259-8ba8-2f8babe77e62.png" alt="Dodol khas Agam dalam kemasan modern dengan latar belakang kayu" class="w-full h-48 object-cover">
+                        <div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">Baru</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Dodol Agam</h3>
+                        <p class="text-gray-600 mb-4">Dodol tradisional dengan rasa original dan premium.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-600">Rp 75.000</span>
+                            <button class="btn-action px-4 py-2 rounded-md text-sm">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd29e811-c69b-4593-bb03-abffe7abf24e.png" alt="Kain songket tradisional dengan motif khas Minangkabau berwarna emas dan merah" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Kain Songket</h3>
+                        <p class="text-gray-600 mb-4">Kain tradisional Minangkabau dengan motif elegan.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-green-600">Rp 450.000</span>
+                            <button class="btn-action px-4 py-2 rounded-md text-sm">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10 animate__animated animate__fadeIn">
+                <button class="btn-action px-6 py-2 rounded-lg font-medium shadow-lg mx-auto">Lihat Semua Produk</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokasi UKM -->
+    <section id="lokasi" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Peta Lokasi UKM</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Temukan lokasi UKM di seluruh Kabupaten Agam</p>
+            </div>
+            
+            <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-yellow-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Kawasan Sentra UKM</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Sentra Kerajinan Rotan</h4>
+                                    <p class="text-green-100">Kecamatan Tanjung Raya</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Sentra Tenun Songket</h4>
+                                    <p class="text-green-100">Kecamatan Lubuk Basung</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Sentra Makanan Tradisional</h4>
+                                    <p class="text-green-100">Kecamatan Ampek Angkek</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-0">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da876e8b-1056-4612-ba12-51adffb198d6.png" alt="Peta digital Kabupaten Agam dengan penanda lokasi sentra UKM utama" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial -->
+    <section id="tutorial" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Video Tutorial</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Belajar cara mengembangkan usaha dengan video tutorial kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeIn">
+                    <div class="relative pb-[56.25%]">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/004d89cf-af22-41cb-85a0-bc3dcf5d025e.png" alt="Thumbnail video tutorial pemasaran digital dengan gambar laptop dan grafik statistik" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-yellow-600 bg-opacity-80 rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Strategi Pemasaran Digital</h3>
+                        <p class="text-gray-600 mb-4">Pelajari cara memasarkan produk UKM melalui platform digital.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>15 menit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                    <div class="relative pb-[56.25%]">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d87f553d-d4d2-46ea-b872-c7a21afe05a6.png" alt="Thumbnail video pengemasan produk dengan contoh kemasan kreatif dan profesional" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-green-600 bg-opacity-80 rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Teknik Pengemasan Produk</h3>
+                        <p class="text-gray-600 mb-4">Tips membuat kemasan produk yang menarik dan profesional.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>20 menit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                    <div class="relative pb-[56.25%]">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/252ce4b5-8ebe-46f9-b947-fc21a1fae6e9.png" alt="Thumbnail video pengelolaan keuangan dengan gambar diagram dan kalkulator" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-green-600 bg-opacity-80 rounded-full w-16 h-16 flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Pengelolaan Keuangan UMKM</h3>
+                        <p class="text-gray-600 mb-4">Manajemen keuangan dasar untuk usaha kecil dan menengah.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>25 menit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pemberitahuan -->
+    <section id="pemberitahuan" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pemberitahuan Terbaru</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Informasi terkini seputar program dan kegiatan UKM Kabupaten Agam</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Berita 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Program</div>
+                            <span class="text-gray-500 text-sm ml-auto">3 Hari Lalu</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Pelatihan Digital Marketing Gratis untuk UKM</h3>
+                        <p class="text-gray-600 mb-4">Dinas Koperasi dan UKM Kabupaten Agam akan menyelenggarakan pelatihan digital marketing untuk pelaku UKM pada tanggal 15 Juli 2023.</p>
+                        <a href="#" class="text-green-600 font-medium flex items-center">
+                            Baca Selengkapnya
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Berita 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Pengumuman</div>
+                            <span class="text-gray-500 text-sm ml-auto">1 Minggu Lalu</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Pendaftaran Bantuan Modal Usaha Tahap II 2023</h3>
+                        <p class="text-gray-600 mb-4">Bagi UKM yang belum sempat mendaftar program bantuan modal usaha tahap I, pendaftaran tahap II dibuka mulai 1 Agustus 2023.</p>
+                        <a href="#" class="text-green-600 font-medium flex items-center">
+                            Baca Selengkapnya
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Berita 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover md:col-span-2">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed80a702-ff75-4684-a2f5-741d79e7135c.png" alt="Pameran produk UKM dengan stan-stan yang ramai pengunjung dan produk yang dipajang menarik" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-2/3 p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Event</div>
+                                <span class="text-gray-500 text-sm ml-auto">2 Minggu Lalu</span>
+                            </div>
+                            <h3 class="font-bold text-xl mb-2">Pameran UKM Kabupaten Agam 2023 Sukses Digelar</h3>
+                            <p class="text-gray-600 mb-4">Pameran UKM tahunan yang digelar di halaman Kantor Bupati Agam berhasil menarik lebih dari 5.000 pengunjung dan transaksi mencapai Rp 1,2 miliar.</p>
+                            <a href="#" class="text-green-600 font-medium flex items-center">
+                                Baca Selengkapnya
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonial -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Testimonial</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Apa kata mereka tentang program UKM Kabupaten Agam</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testi 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative hover:shadow-md transition">
+                    <div class="absolute -top-6 -left-6 bg-yellow-600 text-white text-4xl w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Berkat pelatihan dari Dinas Koperasi, saya bisa mengembangkan usaha kerajinan saya hingga bisa ekspor ke luar negeri."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d314c51-7869-4ec5-a35b-e3ad10a7169c.png" alt="Potret pemilik usaha kerajinan rotan dengan senyum tulus" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">H. Ali Mansur</h4>
+                            <p class="text-sm text-gray-500">Pemilik Rotan Indah</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testi 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative hover:shadow-md transition">
+                    <div class="absolute -top-6 -left-6 bg-green-600 text-white text-4xl w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Modal bantuan yang saya terima tahun lalu sangat membantu dalam pengembangan usaha makanan tradisional saya."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a9c4b3d-a696-4040-b2aa-bb333a27472e.png" alt="Potret wanita pengusaha makanan tradisional dengan latar belakang dapur produksi" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Nurhayati</h4>
+                            <p class="text-sm text-gray-500">Pemilik Dodelicious</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testi 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm relative hover:shadow-md transition">
+                    <div class="absolute -top-6 -left-6 bg-green-600 text-white text-4xl w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Pameran UKM tahunan sangat membantu dalam memperluas jaringan bisnis dan meningkatkan penjualan produk kami."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/65759b5e-dc0e-4dc9-8ccf-994055cba6d9.png" alt="Potret muda pengusaha konveksi dengan background kain songket" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Riki Febrian</h4>
+                            <p class="text-sm text-gray-500">Pemilik Songket Riki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">UKM Kabupaten Agam</h3>
+                    <p class="text-gray-400">Portal resmi pengembangan Usaha Kecil Menengah Kabupaten Agam, Sumatera Barat.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Menu Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#produk" class="text-gray-400 hover:text-white transition">Produk UKM</a></li>
+                        <li><a href="#lokasi" class="text-gray-400 hover:text-white transition">Lokasi</a></li>
+                        <li><a href="#tutorial" class="text-gray-400 hover:text-white transition">Tutorial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Informasi</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#pemberitahuan" class="text-gray-400 hover:text-white transition">Pemberitahuan</a></li>
+                        <li><a href="#daftar" class="text-gray-400 hover:text-white transition">Daftar UKM</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Jl. Sudirman No. 12, Lubuk Basung, Kab. Agam</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>(0752) 12345</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>ukm@agamkab.go.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Dinas Koperasi dan UKM Kabupaten Agam. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('nav.hidden');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.add('flex-col', 'absolute', 'top-20', 'right-4', 'bg-yellow-700', 'p-4', 'rounded-lg', 'shadow-xl', 'z-50');
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                }
+            });
+        });
+        
+        // Animation on Scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-fadeInUp');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
